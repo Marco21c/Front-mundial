@@ -26,12 +26,12 @@ export default function Home() {
           className="relative z-10 h-full flex flex-col justify-end items-start p-10 text-left"
         >
           <h1 className="text-4xl lg:text-6xl font-extrabold text-white leading-tight">
-            Copa del Mundo <br />
-            <span className="text-green-500">2026</span>
+            Cup
+            <span className="text-green-500">App</span>
           </h1>
 
           <p className="mt-4 text-sm lg:text-xl text-slate-200 max-w-xl bg-black/30 backdrop-blur-md rounded-xl px-6 py-3 inline-block text-center">
-            Resultados, partidos y estadísticas en tiempo real
+               Resultados, partidos y estadísticas en tiempo real.
           </p>
 
           <div className="flex flex-col md:flex-row  gap-4 mt-8">

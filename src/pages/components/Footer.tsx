@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Branding */}
         <div className="text-center md:text-left">
           <h3 className="text-xl font-bold text-white">
-            Copa del Mundo <span className="text-green-500">2026</span>
+            Cup<span className="text-green-500">App</span>
           </h3>
           <p className="text-sm text-slate-400 mt-2">
             Resultados, partidos y estadísticas en tiempo real
@@ -41,7 +41,7 @@ export default function Footer() {
 
       {/* Bottom */}
       <div className="text-center text-xs text-slate-500 py-4 border-t border-white/5">
-        © {new Date().getFullYear()} Copa del Mundo 2026 — Todos los derechos reservados
+        © {new Date().getFullYear()} CupApp — Todos los derechos reservados
       </div>
     </footer>
   );
