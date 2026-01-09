@@ -12,17 +12,26 @@ const links = [
 export default function Navbar() {
 
   return (
-    <header>
-    <nav className="bg-slate-900 text-white px-3 py-4 mx-4 flex flex-wrap items-center justify-center rounded-full gap-y-4">
-      
-       <ul className="flex flex-wrap gap-4 text-base font-medium justify-center">
-        {links.map((link)=>(
-            <NavItem key={link.path} to={link.path}>
-               <link.icon className='w-5 h-5 mx-1 my-1' /> {link.name}
-            </NavItem>
-        ))}
-       </ul>
-    </nav>
-    </header>
+    <header className="sticky top-4 z-50 mx-4">
+  <nav className="
+    max-w-7xl mx-auto
+    bg-slate-900/80 backdrop-blur-md
+    px-6 py-3
+    rounded-full
+    shadow-lg shadow-black/20
+  ">
+    <ul className="flex flex-wrap gap-1 md:gap-4 items-center justify-center">
+      {links.map((link) => (
+        <NavItem key={link.path} to={link.path} label={link.name}>
+          <span className="flex items-center gap-2">
+            <link.icon className="md:w-5 md:h-5 w-6 h-6" />
+            <span className="hidden sm:inline">{link.name}</span>
+          </span>
+        </NavItem>
+      ))}
+    </ul>
+  </nav>
+</header>
+
   )
 }

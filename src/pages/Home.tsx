@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Calendar, Clock} from "lucide-react";
 export default function Home() {
   return (
-   <div className="flex justify-center mt-4">
+   <div className="flex justify-center mt-8">
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -30,7 +30,7 @@ export default function Home() {
             <span className="text-green-500">2026</span>
           </h1>
 
-          <p className="mt-4 text-sm lg:text-xl text-slate-200 max-w-xl bg-black/30 backdrop-blur-md rounded-xl px-6 py-3 inline-block">
+          <p className="mt-4 text-sm lg:text-xl text-slate-200 max-w-xl bg-black/30 backdrop-blur-md rounded-xl px-6 py-3 inline-block text-center">
             Resultados, partidos y estadísticas en tiempo real
           </p>
 
