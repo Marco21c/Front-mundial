@@ -8,14 +8,13 @@ export default function Home() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="w-[95%]  bg-slate-950 px-4 rounded-3xl" 
-    >
+      className=" max-w-8xl mx-auto w-[90%] bg-slate-950 px-4 rounded-3xl overflow-hidden opacity-80" >
       {/* HERO */}
       <motion.div
-        initial={{ scale: 1.6 }}
+        initial={{ scale: 1.2 }}
         animate={{ scale: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
-        className="relative h-[520px] bg-hero-mundial bg-cover bg-center rounded-3xl mt-6 overflow-hidden">
+        className="relative h-[520px] bg-hero-mundial  bg-cover bg-center rounded-3xl mt-6 overflow-hidden">
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/25 to-transparent" />
 
